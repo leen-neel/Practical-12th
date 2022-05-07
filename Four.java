@@ -3,9 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-/**
- * Three
- */
 public class Four {
 
     public static int mobiusNumber(int n) {
