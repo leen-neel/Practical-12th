@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Three
  */
-public class Three {
+public class Four {
 
     public static int mobiusNumber(int n) {
         
