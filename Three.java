@@ -10,12 +10,15 @@ public class Three {
 
     public static int mobiusNumber(int n) {
         
+        // If the number is 1, return 1
         if (n == 1) {
             return 1;
         }
 
-        ArrayList<Integer> factors = new ArrayList<Integer>();
-       
+       ArrayList<Integer> factors = new ArrayList<Integer>(); // This ArrayList stores the factors
+      
+
+       // Find the factors and add them to the factors list
        for (int i = 2; i < n; i++) {
           while (n % i == 0) {
               factors.add(i);
@@ -27,16 +30,20 @@ public class Three {
           factors.add(n); 
        }
 
+       // This set will store the same values as the factors list
        Set<Integer> set = new HashSet<Integer>(factors);
 
+       // Since sets can't store duplicates, if the size of set is larger than the factors list, we assume that there's been repetition of elements and we return 0
        if (set.size() < factors.size()) {
            return 0;           
        }
 
+       // If the number of factors is 2, we return 1
        if (factors.size() == 2) {
            return 1;
        }
 
+       // If the code reaches this point, we return -1
        return -1; 
     }
 
