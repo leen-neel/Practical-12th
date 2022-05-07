@@ -14,7 +14,6 @@ public class Three {
             return 1;
         }
 
-        // Make a new list and a set
         ArrayList<Integer> factors = new ArrayList<Integer>();
        
        for (int i = 2; i < n; i++) {
@@ -28,7 +27,6 @@ public class Three {
           factors.add(n); 
        }
 
-       // Make a new Set with factors list
        Set<Integer> set = new HashSet<Integer>(factors);
 
        if (set.size() < factors.size()) {
