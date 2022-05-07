@@ -9,3 +9,5 @@ git push origin main
 
 clear
 figlet "Done!"
+sleep 2
+clear
