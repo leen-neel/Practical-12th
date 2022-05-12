@@ -55,4 +55,23 @@ public class Four {
 
     }
     
+
 }
+
+/**
+ * main():
+ * Step 1: Start
+ * Step 2: Enter a number 
+ * Step 3: Find the mobius function
+ * Step 4: Print the mobius function
+ * Step 5: End 
+ * 
+ * mobiusNumber():
+ * Step 1: If the number is 1, return 1
+ * Step 2: Create an ArrayList
+ * Step 3: Find the factors and add them to the ArrayList
+ * Step 4: Create a set
+ * Step 5: If the size of the set is larger than the size of the ArrayList, we assume that there's been repetition of elements and we return 0
+ * Step 6: Return -1 if the code reaches this point
+ * Step 7: End 
+ */
