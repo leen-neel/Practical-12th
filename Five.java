@@ -77,7 +77,7 @@ public class Five {
 
         System.out.println();
 
-        System.out.println("The amount in words : " + toWords(amount));
+        System.out.println(toWords(amount));
         System.out.println();
         denominate(amount);
 
