@@ -61,7 +61,7 @@ public class Five {
            int count =  number / notes[i];
            
            if (count != 0) {
-               System.out.println(notes[i] + "\t*\t" + count + "\t=\t" + (count*notes[i]));
+               System.out.println(notes[i] + "\t*\t" + count + "\t=\t" + (count * notes[i]));
                number = number % notes[i];
            }
         }
