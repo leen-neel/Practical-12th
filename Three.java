@@ -47,10 +47,14 @@ public class Three {
 
         sortedString(words);
 
-        if (str.charAt(str.length() - 1) == '.' || str.charAt(str.length() - 1) == '?' || str.charAt(str.length() - 1) != '!') {
+        if (str.charAt(str.length() - 1) == '.' || str.charAt(str.length() - 1) == '?' || str.charAt(str.length() - 1) == '!') {
 
             System.out.println(arrayToString(words));
             
+        } else {
+
+            System.out.println("Invalid string termination.");
+
         }
         
     }     
