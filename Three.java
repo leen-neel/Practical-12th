@@ -29,7 +29,7 @@ public class Three {
         String str = "";
 
         for (int i = 0; i < words.length; i++) {
-           str += words[i];
+           str += words[i] + " ";
         }
 
         return str.trim();
@@ -46,12 +46,10 @@ public class Three {
         String[] words = str.split("\\s");
 
         sortedString(words);
-        // System.out.println(Arrays.toString(words));
-
 
         if (str.charAt(str.length() - 1) == '.' || str.charAt(str.length() - 1) == '?' || str.charAt(str.length() - 1) != '!') {
 
-            
+            System.out.println(arrayToString(words));
             
         }
         
