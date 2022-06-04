@@ -24,6 +24,18 @@ public class Three {
 
     }
 
+    public static String arrayToString(String[] words) {
+
+        String str = "";
+
+        for (int i = 0; i < words.length; i++) {
+           str += words[i];
+        }
+
+        return str.trim();
+        
+    }
+
     public static void main(String[] args) throws IOException {
         
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -34,14 +46,14 @@ public class Three {
         String[] words = str.split("\\s");
 
         sortedString(words);
-        System.out.println(Arrays.toString(words));
+        // System.out.println(Arrays.toString(words));
 
 
-        // if (str.charAt(str.length() - 1) == '.' || str.charAt(str.length() - 1) == '?' || str.charAt(str.length() - 1) != '!') {
+        if (str.charAt(str.length() - 1) == '.' || str.charAt(str.length() - 1) == '?' || str.charAt(str.length() - 1) != '!') {
 
-        //     System.out.println(str);
             
-        // }
+            
+        }
         
     }     
     
