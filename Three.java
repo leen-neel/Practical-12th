@@ -6,6 +6,8 @@ public class Three {
     
     public static boolean isKaprekar(int n) {
         
+        // Since we know that 1 is a kaprekar number we return true
+        // And on the other hand, we return false for 2 and 3
         if (n == 1) {
             return true;
         } else if (n == 2 || n == 3) {
