@@ -1,62 +1,76 @@
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Three {
-
-    public static void sortedString(String[] s) {
+    
+    public static boolean isKaprekar(int n) {
         
-        int n = s.length;
-
-        for (int i=1 ;i < n; i++) {
-            String temp = s[i];
-     
-            // Insert s[j] at its correct position
-            int j = i - 1;
-            while (j >= 0 && temp.length() < s[j].length())
-            {
-                s[j+1] = s[j];
-                j--;
-            }
-            s[j+1] = temp;
+        if (n == 1) {
+            return true;
+        } else if (n == 2 || n == 3) {
+            return false;
         }
 
-    }
+        int squared = (int) Math.pow(n, 2);
+        int d = Integer.toString(n).length(); // d as given in the question
+        String squareNum = Integer.toString(squared);
 
-    public static String arrayToString(String[] words) {
+        StringBuffer firstHalf = new StringBuffer();
+        StringBuffer secondHalf = new StringBuffer();
 
-        String str = "";
+        if (squareNum.length() % 2 == 0) {
+            
+            // If the number of digits in the square of the number is even
+            // We divide the number in two equal parts
 
-        for (int i = 0; i < words.length; i++) {
-           str += words[i] + " ";
-        }
+            firstHalf.append(squareNum.substring(0, squareNum.length() / 2));
+            secondHalf.append(squareNum.substring(squareNum.length() / 2));
 
-        return str.trim();
-        
+        } else {
+
+            // If it isn't even, we divide it into two parts with (d - 1)
+
+            firstHalf.append(squareNum.substring(0, d - 1));
+            secondHalf.append(squareNum.substring(d - 1));
+
+        }      
+
+
+        return Integer.parseInt(firstHalf.toString()) + Integer.parseInt(secondHalf.toString()) == n;
+
     }
 
     public static void main(String[] args) throws IOException {
         
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.print("Enter a string : ");
-        String str = in.readLine();
+        System.out.print("Enter lower limit (less than 5000) : ");
+        int p = Integer.parseInt(in.readLine());
 
-        String[] words = str.split("\\s");
+        System.out.print("Enter upper limit (less than 5000) : ");
+        int q = Integer.parseInt(in.readLine());
 
-        sortedString(words);
+        int count = 0;
 
-        if (str.charAt(str.length() - 1) == '.' || str.charAt(str.length() - 1) == '?' || str.charAt(str.length() - 1) == '!') {
+        System.out.println();
 
-            System.out.println(arrayToString(words));
+        System.out.print("The Kaprekar numbers are : ");  
+        if (p < 5000 && q < 5000) {
             
-        } else {
+            for (int i = p; i <= q; i++) {
+                
+                if (isKaprekar(i)) {
+                    System.out.print(i + " ");
+                    count++;
+                }
 
-            System.out.println("Invalid string termination.");
+            }
+
+            System.out.println("\nThe frequency of Kaprekar numbers is : " + count);
 
         }
-        
-    }     
-    
+            
+    }
+
 }
