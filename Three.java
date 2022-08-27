@@ -76,3 +76,19 @@ public class Three {
     }
 
 }
+
+/**
+ * 
+ * isKaprekar(n):
+ * Step 1: Start
+ * Step 2: If n is 1, return true. Else if it's 2 or 3, return false
+ * Step 3: Intitialize variable squared with the value of n squared
+ * Step 4: Intialize variable d, with the value of length of n
+ * Step 5: Initialize variable squareNum, with the value of squared converted to a string
+ * Step 6: Initialize two StringBuffer objects named firstHalf and secondHalf
+ * Step 7: If the length of squareNum is even, append first half of the string to firstHalf and the rest to secondHalf
+ * Step 8: If the length of the squareNum is odd, append squareNum.substring(0, d - 1) to fist half and the rest from index (d - 1) till the end to secondhalf
+ * Step 9: Return if the sum of firstHalf and secondHalf is equal to n
+ * Step 10: End  
+ * 
+ */
