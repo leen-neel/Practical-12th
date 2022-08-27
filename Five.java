@@ -5,6 +5,25 @@ import java.util.*;
 
 public class Five {
 
+
+    public static boolean isPrime(int n) {
+
+        int factors = 0;
+
+        if (n == 0 || n == 1) {
+            return false;
+        }
+
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                factors++;
+            }
+        }
+
+        return factors == 2;
+
+    }
+
     public static int mobiusNumber(int n) {
         
         // If the number is 1, return 1
@@ -17,7 +36,7 @@ public class Five {
 
        // Find the factors and add them to the factors list
        for (int i = 2; i < n; i++) {
-          while (n % i == 0) {
+          while (n % i == 0 && isPrime(i)) {
               factors.add(i);
               n = n / i;
           } 
