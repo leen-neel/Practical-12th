@@ -26,19 +26,11 @@ public class One {
     // parameter
     public static boolean isPalindrome(int n) {
 
-        int revNum = 0;
-        int numberCopy = n;
+        StringBuffer num = new StringBuffer(Integer.toString(n));
+        int reverseNum = Integer.parseInt(num.reverse().toString());
 
-        int reminder = 0;
-
-        while (numberCopy > 0) {
-            reminder = numberCopy % 10;
-            revNum = (revNum * 10) + reminder;
-            numberCopy /= 10;
-        }
-
-        return revNum == n;
-
+        return n == reverseNum;
+        
     }
 
     // This function takes the range as parameters and prints the numbers which are
@@ -80,3 +72,21 @@ public class One {
     }
 
 }
+
+/**
+ * isPrime(n):
+ * Step 1: Start
+ * Step 2: If n equals 0 or 1, return false
+ * Step 3: Initialize variable factors
+ * Step 4: Loop from 1 to n, if(n % i == 0) increment factors by 1
+ * Step 5: Return (factors == 2)
+ * Step 6: End
+ * 
+ * isPalindrome(n):
+ * Step 1: Start
+ * Step 2: Create StringBuffer num with n converted to string as a parameter
+ * Step 3: Reverse num and parse it as an integer and name it reverseNum
+ * Step 4: Return n == reverseNum
+ * Step 5: End
+ * 
+ */
