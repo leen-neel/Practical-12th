@@ -71,3 +71,24 @@ public class Four {
     }
 
 }
+
+/*
+
+ * isPrime(n):
+ * Step 1: Start
+ * Step 2: If n equals 0 or 1, return false
+ * Step 3: Initialize variable factors
+ * Step 4: Loop from 1 to n, if(n % i == 0) increment factors by 1
+ * Step 5: Return (factors == 2)
+ * Step 6: End
+ * 
+ * findPrimes(n):
+ * Step 1: Start
+ * Step 2: Initialize ArrayList object differences which will be used to store the differences between two numbers
+ * Step 3: Initialize int difference
+ * Step 4: Loop from 0 to n with variable i
+ * Step 5: If i is a prime number, difference = n - i
+ * Step 6: If differences contains i already, check if difference is a prime number. If it is a prime number, add difference to differences and print corresponding output
+ * Step 7: End
+ * 
+ */
