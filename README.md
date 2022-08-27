@@ -6,4 +6,4 @@ For example:
 `One.java` contains answer to question number 1.
 Algorithm's written at the bottom of the code.
 
-PS: Kindly ignore `Extras` and `git-push.sh`
+PS: Kindly ignore whatever's in `Extras` and `git-push.sh`
