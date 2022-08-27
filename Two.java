@@ -73,7 +73,7 @@ public class Two {
 
         System.out.println();
 
-        System.out.println("Frequency of Adam-Prime numbers is " + count);
+        System.out.println("Frequency of Adam-Prime numbers is: " + count);
 
     }
 
