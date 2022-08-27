@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 public class One {
     
+    // This function checkks if a number is prime or not
     public static boolean isPrime(int n) {
 
         int factors = 0;
