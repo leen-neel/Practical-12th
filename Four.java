@@ -73,7 +73,7 @@ public class Four {
 }
 
 /*
-
+ *
  * isPrime(n):
  * Step 1: Start
  * Step 2: If n equals 0 or 1, return false
