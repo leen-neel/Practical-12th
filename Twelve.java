@@ -38,7 +38,7 @@ public class Twelve {
 
         if (!(length > 2 && length < 10)) {
 
-            System.out.println("Enter a number less than 2 and greater than 10");
+            System.out.println("Out of range");
             return;
 
         }
@@ -67,3 +67,14 @@ public class Twelve {
     }
 
 }
+
+/*
+ * 
+ * Step 1: Start
+ * Step 2: Take array as input
+ * Step 3: Make a new array with the same size
+ * Step 4: Put the current element of the array into [j][length - 1 - i] of the new array
+ * Step 5: Return new array
+ * Step 6: End
+ * 
+ */
