@@ -71,3 +71,29 @@ public class Fourteen {
    }
 
 }
+
+/*
+ * getPotential(String):
+ * Step 1: Start
+ * Step 2: Make a HashMap to store the alphabets with the corresponding "potentials"
+ * Step 3: Loop through the input string's characters and add the corresponding potential from the HashMap
+ * Step 4: Return the calculated potential
+ * Step 5: End
+ * 
+ * sortByPotential(String):
+ * Step 1: Start
+ * Step 2: Split the given sentence into a array of words, make an array to store the potentials of the same length
+ * Step 3: Make a HashMap to store the potential of a word as the key and the word itself as the value
+ * Step 4: Sort the "potentials" array
+ * Step 5: Loop through the potentials array and get the word from the HashMap, append it to a string
+ * Step 6: Trim the string and return it
+ * Step 7: End
+ * 
+ * main():
+ * Step 1: Start
+ * Step 2: Take sentence as input
+ * Step 3: Instantiate a variable and set it to the value of sortPotential(sentence)
+ * Step 4: Print the variable
+ * Step 5: End
+ * 
+ */
