@@ -1,4 +1,3 @@
-import java.io.*; 
 class Eleven {
   public static void spiralMatrixPrint(int[][] arr) {
 
