@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Fifteen {
+public class Sixteen {
 
     public static boolean isPalindrome(String str) {
 
