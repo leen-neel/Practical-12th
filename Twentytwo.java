@@ -41,10 +41,10 @@ public class Twentytwo {
                 } else {
                    System.out.print(teams[j].charAt(i) + "\t"); 
                 }
-
-                System.out.println();
-
+                
             }
+
+            System.out.println();
             
         }
 
