@@ -1,82 +1,93 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
-/**
- * Twentyfour
- */
 public class Twentyfour {
+	public static void main(String[] args)
+	{
+		Queue queue = new Queue(1000);
 
-    public static void main(String[] args) {
-        
-        Queue<Integer> myQueue = new Queue(3);
+		queue.enqueue(10);
+		queue.enqueue(20);
+		queue.enqueue(30);
+		queue.enqueue(40);
 
+		System.out.println(queue.dequeue()
+						+ " dequeued from queue\n");
 
+		System.out.println("Front item is "
+						+ queue.front());
 
-    }
-    
+		System.out.println("Rear item is "
+						+ queue.rear());
+	}
 }
 
-public class Queue<T> {
+class Queue {
+	int front, rear, size;
+	int capacity;
+	int array[];
 
-    int front, rear, capacity;
-    T arr[];
+	public Queue(int capacity)
+	{
+		this.capacity = capacity;
+		front = this.size = 0;
+		rear = capacity - 1;
+		array = new int[this.capacity];
+	}
 
-    public Queue(Class<T> c, int capacity)  {
+	// Queue is full when size becomes
+	// equal to the capacity
+	boolean isFull(Queue queue)
+	{
+		return (queue.size == queue.capacity);
+	}
 
-        this.front = 0;
-        this.rear = 0;
-        this.capacity = capacity;
+	// Queue is empty when size is 0
+	boolean isEmpty(Queue queue)
+	{
+		return (queue.size == 0);
+	}
 
-        @SuppressWarnings("unchecked")
-        final T[] a = (T[]) Array.newInstance(c, capacity);
-        this.arr = a;
+	// Method to add an item to the queue.
+	// It changes rear and size
+	void enqueue(int item)
+	{
+		if (isFull(this))
+			return;
+		this.rear = (this.rear + 1)
+					% this.capacity;
+		this.array[this.rear] = item;
+		this.size = this.size + 1;
+		System.out.println(item
+						+ " enqueued to queue");
+	}
 
-   }
+	// Method to remove an item from queue.
+	// It changes front and size
+	int dequeue()
+	{
+		if (isEmpty(this))
+			return Integer.MIN_VALUE;
 
-    void enqueue(T data) {
+		int item = this.array[this.front];
+		this.front = (this.front + 1)
+					% this.capacity;
+		this.size = this.size - 1;
+		return item;
+	}
 
-            if (capacity == rear) {
-            System.out.println("\nQueue is full\n");
-            return;
-            }
+	// Method to get front of queue
+	int front()
+	{
+		if (isEmpty(this))
+			return Integer.MIN_VALUE;
 
-            arr[rear] = data;
-            rear++;
+		return this.array[this.front];
+	}
 
-    }
+	// Method to get rear of queue
+	int rear()
+	{
+		if (isEmpty(this))
+			return Integer.MIN_VALUE;
 
-   void dequeue() {
-
-        if (front == rear) {
-            System.out.println("\nQueue is empty\n"); 
-        }
-
-        for (int i = 0; i < rear - 1; i++) {
-            arr[i] = arr[i + 1];
-        }
-
-        if (rear < capacity) {
-            arr[rear] = 0;
-        }
-
-        rear--;
-
-   }
-
-   public String toString() {
-
-        String ans = "";
-
-        if (front == rear) {
-           System.out.println("\nQueue is empty\n"); 
-        }
-
-        for (int i = 0; i < rear; i++) {
-           ans += arr[i] + "<=";
-        }
-
-        return ans;
-
-   }
-
+		return this.array[this.rear];
+	}
 }
