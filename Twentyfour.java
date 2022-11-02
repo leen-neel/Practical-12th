@@ -1,6 +1,5 @@
 public class Twentyfour {
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Queue queue = new Queue(1000);
 
 		queue.enqueue(10);
@@ -24,8 +23,7 @@ class Queue {
 	int capacity;
 	int array[];
 
-	public Queue(int capacity)
-	{
+	public Queue(int capacity)	{
 		this.capacity = capacity;
 		front = this.size = 0;
 		rear = capacity - 1;
@@ -34,21 +32,18 @@ class Queue {
 
 	// Queue is full when size becomes
 	// equal to the capacity
-	boolean isFull(Queue queue)
-	{
+	boolean isFull(Queue queue)	{
 		return (queue.size == queue.capacity);
 	}
 
 	// Queue is empty when size is 0
-	boolean isEmpty(Queue queue)
-	{
+	boolean isEmpty(Queue queue) {
 		return (queue.size == 0);
 	}
 
 	// Method to add an item to the queue.
 	// It changes rear and size
-	void enqueue(int item)
-	{
+	void enqueue(int item) {
 		if (isFull(this))
 			return;
 		this.rear = (this.rear + 1)
@@ -61,8 +56,7 @@ class Queue {
 
 	// Method to remove an item from queue.
 	// It changes front and size
-	int dequeue()
-	{
+	int dequeue() {
 		if (isEmpty(this))
 			return Integer.MIN_VALUE;
 
@@ -74,8 +68,7 @@ class Queue {
 	}
 
 	// Method to get front of queue
-	int front()
-	{
+	int front() {
 		if (isEmpty(this))
 			return Integer.MIN_VALUE;
 
@@ -83,8 +76,7 @@ class Queue {
 	}
 
 	// Method to get rear of queue
-	int rear()
-	{
+	int rear()	{
 		if (isEmpty(this))
 			return Integer.MIN_VALUE;
 
