@@ -7,22 +7,19 @@ import java.io.IOException;
 public class Twenty {
 
     public static boolean isLeapYear(int y) {
-        boolean ret = false;
         
         if (y % 400 == 0) {
-            ret = true;
+            return true;
         }
         else if (y % 100 == 0) {
-            ret = false;
+            return false;
         }
         else if (y % 4 == 0) {
-            ret = true;
-        }
-        else {
-            ret = false;
+            return true;
         }
         
-        return ret;
+        return false;
+        
     }
     
     public static String computeDate(int day, int year) {
