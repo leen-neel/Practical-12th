@@ -35,6 +35,10 @@ public class Twentyone {
             return false;
         }
 
+        if (d < 0) {
+            return false;
+        }
+
         return true;
 
     }
@@ -62,3 +66,15 @@ public class Twentyone {
     }
     
 }
+
+/*
+ * 
+ * Step 1: Start
+ * Step 2: Take the date as input
+ * Step 3: Check if the year is a leap year and return true if the date is Feb 29th
+ * Step 4: If the number of days is more than the corresponding number of days in a month, return false
+ * Step 5: If the number of day is less than 0, return false
+ * Step 6: If we reach this part of the code we return true
+ * Step 7: End
+ * 
+ */
