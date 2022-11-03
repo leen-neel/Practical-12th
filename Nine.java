@@ -26,7 +26,7 @@ public class Nine {
 
     public static void printArray(int[][] arr) {
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
+            for (int j = 0; j < arr[0].length; j++) {
                 System.out.print(arr[i][j] + "\t");
             }
             System.out.println();
@@ -52,7 +52,7 @@ public class Nine {
 
         for (int i = 0; i < arr.length; i++) {
 
-            for (int j = 0; j < arr.length; j++) {
+            for (int j = 0; j < arr[0].length; j++) {
 
                 System.out.print("Enter data for position (" + i + ", " + j + ") : ");
                 arr[i][j] = Integer.parseInt(in.readLine());
