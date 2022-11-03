@@ -38,7 +38,7 @@ public class Eight {
 
         System.out.println();
         int[][] arr = new int[order][order];
-
+		
         for (int i = 0; i < order; i++) {
            for (int j = 0; j < order; j++) {
                 System.out.print("Enter the data for position (" + i + ", " + j + ") : ");
@@ -49,9 +49,14 @@ public class Eight {
         System.out.println();
 
         int[][] newArr = mirrorImage(arr);
+		
+		System.out.println("Original matrix : ");
 
         printArr(arr);
-        System.out.println();
+
+        System.out.println();	
+		System.out.println("Mirror image matrix : ");
+
         printArr(newArr);
 
     }
