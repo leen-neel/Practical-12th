@@ -59,3 +59,13 @@ public class Seven {
     }
 
 }
+
+/*
+ * 
+ * Step 1: Start
+ * Step 2: Get the arrays as input 
+ * Step 3: Add the primary and secondary diagonal elements to a variable
+ * Step 4: Return the variables in an array
+ * Step 4: End
+ * 
+ */
