@@ -69,3 +69,14 @@ public class Ten {
         }
     }
 }
+
+/*
+ * 
+ * Step 1: Start
+ * Step 2: Take the array as input
+ * Step 3: Sort the array
+ * Step 3: Create a new matrix and fill it with corresponding elements
+ * Step 4: Print the matrix
+ * Step 5: End
+ * 
+ */
