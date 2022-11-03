@@ -3,9 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 
-/**
- * Fifteen
- */
 public class Fifteen {
 
     public static String encrypt(String str) {
@@ -109,3 +106,20 @@ public class Fifteen {
     
 }
 
+/**
+ * 
+ * encrypt(String str):
+ * Step 1: Start
+ * Step 2: Initialize a HashMap to store the characters in key value pairs
+ * Step 3: Loop over str and get the character from the HashMap and concatenate the value to a string
+ * Step 4: Return the string
+ * Step 5: End
+ * 
+ * revSentence(String str):
+ * Step 1: Start
+ * Step 2: Split str in an array for words
+ * Step 3: Loop through the array from back to front and concatenate it to a string
+ * Step 4: Return the string
+ * Step 5: End
+ * 
+ */
