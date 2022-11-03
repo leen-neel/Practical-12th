@@ -11,6 +11,7 @@ public class Fifteen {
         String encrypted = "";
         str = str.toUpperCase();
 
+        // The HashMap will allow us to encrypt the word in O(N) time
         alphabetMap.put('A', 'C');
         alphabetMap.put('B', 'D');
         alphabetMap.put('C', 'E');
@@ -83,6 +84,8 @@ public class Fifteen {
 
         for (int i = 0; i < sentences.length; i++) {
             
+            // If the number of row is an odd number, we encrypt it
+            // Else we reverse it
             if ((i + 1) % 2 != 0) {
                 
                 String[] words = sentences[i].split("\\s");
