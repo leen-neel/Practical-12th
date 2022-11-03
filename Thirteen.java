@@ -51,3 +51,13 @@ public class Thirteen {
     }
     
 }
+
+/*
+ * 
+ * Step 1: Start
+ * Step 2: Take setence as input and split it to an arary for words
+ * Step 3: Sort the array
+ * Step 4: Print the array as a sentene 
+ * Step 5: End
+ * 
+ */
