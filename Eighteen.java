@@ -29,3 +29,12 @@ public class Eighteen {
     }
     
 }
+
+/*
+ * 
+ * Step 1: Start
+ * Step 2: Get the number
+ * Step 3: Get the binary of the number recursively
+ * Step 4: End
+ * 
+ */
