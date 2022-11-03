@@ -88,8 +88,7 @@ public class Twenty {
         if (leap && nDays > 366) {
             nYear = nYear + 1;
             nDays = nDays - 366;
-        }
-        else if (nDays > 365) {
+        } else if (nDays > 365) {
             nYear = nYear + 1;
             nDays = nDays - 365;
         }
@@ -103,3 +102,12 @@ public class Twenty {
     }
 
 }
+
+/**
+ * 
+ * Step 1: Start
+ * Step 2: Get the input from the user
+ * Step 3: Add the number of days to the given date
+ * Step 4: End
+ * 
+ */
