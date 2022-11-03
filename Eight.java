@@ -57,3 +57,13 @@ public class Eight {
     }
 
 }
+
+/*
+ * 
+ * Step 1: Start
+ * Step 2: Get the array as input
+ * Step 3: Loop through the array and add [i][j] of the given array to the [i][length - 1 - j] element of a new array
+ * Step 4: Print the array
+ * Step 5: End
+ * 
+ */
