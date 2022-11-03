@@ -37,3 +37,13 @@ public class Seventeen {
     }
     
 }
+
+/**
+ * 
+ * Step 1: Start
+ * Step 2: If the number is 2, we return true
+ * Step 3: If the number is divisible by i, we return false
+ * Step 4: Else, we return isPrine(n, i+1)
+ * Step 5: End
+ * 
+ */
