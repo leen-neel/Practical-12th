@@ -44,3 +44,13 @@ public class Nineteen {
     }
     
 }
+
+/*
+ * 
+ * Step 1: Start
+ * Step 2: Take two number as input
+ * Step 3: With a == b as a base case which return a, compute the HCF recursively
+ * Step 4: Print the HCF
+ * Step 5: End
+ * 
+ */
