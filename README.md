@@ -1,6 +1,6 @@
 # To the people who are here to copy
 
-Files named after number corresponding to the question number provided by the school.
+Files are named after the corresponding number of the question.
 
 For example:
 `One.java` contains answer to question number 1.
