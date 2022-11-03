@@ -67,3 +67,11 @@ import java.io.InputStreamReader;
     }
      
  }
+
+/*
+ * 
+ * Step 1: Start
+ * Step 2: Loop through permutation combinations of the number and check if they are primes
+ * Step 3: End
+ * 
+ */
