@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 class Eleven {
   public static void spiralMatrixPrint(int[][] arr) {
 
@@ -49,11 +53,27 @@ class Eleven {
     }
   }   
 }
-  public static void main(String[] args)  { 
-    int a[][] = {{1,2,3,4},
-                {5,6,7,8},
-                {9,10,11,12}};
-    spiralMatrixPrint(a); 
+  public static void main(String[] args) throws IOException { 
+    
+      BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+      System.out.print("Enter the size of the matrix : ");
+      int n = Integer.parseInt(in.readLine());
+
+      int[][] arr = new int[n][n];
+      System.out.println();
+
+      for (int i = 0; i < arr.length; i++) {
+        for (int j = 0; j < arr.length; j++) {
+          System.out.print("Enter data for position (" + i + ", " + j + ") : ");
+          arr[i][j] = Integer.parseInt(in.readLine());
+        }
+      }
+
+      System.out.println();
+
+      spiralMatrixPrint(arr);
+  
   } 
 } 
 
