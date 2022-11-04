@@ -55,6 +55,8 @@ public class Twelve {
             }
         }
 
+        int cornerSum = arr[0][0] + arr[0][length - 1] + arr[length - 1][0] + arr[length - 1][length - 1];
+
        System.out.println("Original matrix : "); 
        printArr(arr);
 
@@ -63,6 +65,9 @@ public class Twelve {
         
        System.out.println("Rotated matrix : ");
        printArr(rotatedArr);
+
+       System.out.println();
+       System.out.println("Sum of the corner elements : " + cornerSum);
 
     }
 
